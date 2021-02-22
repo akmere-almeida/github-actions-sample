@@ -11,7 +11,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - id: myCompositeAction
-      uses: akmere-almeida/CompositeActionsArchive@v1 
+      uses: akmere-almeida//github-actions-sample@v1 
       with:
         destinationFolder: '/whatever/folder'
     - run: echo Files copied ${{ steps.myCompositeAction.outputs.copied-files }} 
