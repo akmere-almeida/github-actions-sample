@@ -3,7 +3,7 @@
 name: Composite Example
 
 on: 
-  pull_request:
+  push:
     branches: main
 jobs:
   copy_files_job:
