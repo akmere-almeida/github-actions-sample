@@ -12,7 +12,7 @@ outputs:
 runs:
   using: "composite"
   steps: 
-    - run: ${{ github.action_path }}/ExecuteSomething.sh
+    - run: chmod +x ${{ github.action_path }}/ExecuteSomething.sh
       shell: bash
     - id: random-number-generator
       run: echo "::set-output name=filesNo::$(echo $RANDOM)"
