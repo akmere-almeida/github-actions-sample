@@ -2,8 +2,9 @@
 
 name: Composite Example
 
-on: [workflow_dispatch]
-
+on: 
+  pull_request:
+    branches: main
 jobs:
   copy_files_job:
     runs-on: ubuntu-latest
