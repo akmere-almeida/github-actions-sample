@@ -3,14 +3,12 @@
 name: Composite Example
 
 on: 
-  push:
-    branches: main
   pull_request:
     types:
         - opened
         - edited
         - synchronize
-    branches: development
+    branches: main
 jobs:
   copy_files_job:
     runs-on: ubuntu-latest
