@@ -1,6 +1,6 @@
 # This is an example of using Composite Run Steps Actions
 
-name: Composite Example
+name: Pull Request Only
 
 on: 
   pull_request:

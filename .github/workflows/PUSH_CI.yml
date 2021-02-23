@@ -1,6 +1,6 @@
 # This is an example of using Composite Run Steps Actions
 
-name: Composite Example
+name: Push only
 
 on: 
   push:
