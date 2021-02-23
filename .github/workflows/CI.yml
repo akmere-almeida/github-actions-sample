@@ -7,9 +7,8 @@ on:
     branches: main
   pull_request:
     types:
-        - opened
-        - edited
-        - synchronize
+        - fix
+        - feat
   branches: main
 jobs:
   copy_files_job:
