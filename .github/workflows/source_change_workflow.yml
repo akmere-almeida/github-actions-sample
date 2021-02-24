@@ -30,5 +30,7 @@ jobs:
       uses: ./.github/actions/test
       with:
         destinationFolder: '/whatever/folder'
-    - run: echo Files copied ${{ steps.myCompositeAction.outputs.copied-files }} 
+    - name: Last Step
+      if: steps.semantic-pull-request.types == 'feat'
+      run: echo Files copied ${{ steps.myCompositeAction.outputs.copied-files }} 
       shell: bash
