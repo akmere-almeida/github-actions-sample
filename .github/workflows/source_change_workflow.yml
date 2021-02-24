@@ -11,9 +11,9 @@ jobs:
   copy_files_job:
     runs-on: ubuntu-latest
     name: A job that copy files
-    id: semantic
     steps:
     - name: semantic-pull-request
+      id: semantic
       uses: amannn/action-semantic-pull-request@v3.4.0
       env:
           GITHUB_TOKEN: ${{ secrets.CI_GITHUB_TOKEN }}
