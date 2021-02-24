@@ -9,6 +9,7 @@ jobs:
   copy_files_job:
     runs-on: ubuntu-latest
     name: A job that copy files
+
     steps:
     - uses: actions/checkout@v2
     - name: "Test combine action"
