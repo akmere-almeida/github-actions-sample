@@ -26,12 +26,12 @@ jobs:
           scopes: |
             core
             ui
+          wip: true
     - uses: actions/checkout@v2
     - name: "Test combine action"
       uses: ./.github/actions/test
       with:
         destinationFolder: '/whatever/folder'
     - name: Last Step
-      if: steps.semantic.env.type == 'feat'
       run: echo Files copied ${{ steps.myCompositeAction.outputs.copied-files }} 
       shell: bash
