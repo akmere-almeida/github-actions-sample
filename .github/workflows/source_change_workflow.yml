@@ -32,6 +32,6 @@ jobs:
       with:
         destinationFolder: '/whatever/folder'
     - name: Last Step
-      if: contains(steps.semantic.inputs.types, 'feat')
+      if: steps.semantic.inputs.types == 'feat'
       run: echo Files copied ${{ steps.myCompositeAction.outputs.copied-files }} 
       shell: bash
